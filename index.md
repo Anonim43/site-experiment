@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Understanding Predictive Factors for Merge Conflicts
 
 You can use the [editor on GitHub](https://github.com/Anonim43/site-experiment/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 

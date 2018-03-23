@@ -314,10 +314,11 @@
                     <table class="build_conflicts">
                       <thead>
 					  <b>Ruby Sample - Changes to a common slice does not correlate strongly with</b>
+					  <br>					  
 					  <!--<caption><b>Ruby Sample - Changes to a common slice does not correlate strongly with</b></caption>-->
                         <tr>
                           <th> Conflict Metric </th>
-                          <th> cor </th>
+                          <th> cor *</th>
                           <th> p-value </th>
                            </tr>
                       </thded>
@@ -334,13 +335,14 @@
                           </tr>
                       </tbody>
                      </table>
+					 <br>
                     <table class="build_conflicts">
                       <thead>					 
 					  <b>Python Sample - Changes to a common slice does not correlate strongly with</b>
 					  <!--<caption><b>Ruby Sample - Changes to a common slice does not correlate strongly with</b></caption>-->
                         <tr>
                           <th> Conflict Metric </th>
-                          <th> cor </th>
+                          <th> cor *</th>
                           <th> p-value </th>
                            </tr>
                       </thded>
@@ -356,7 +358,8 @@
                             <td> < 2.2e-16 </td>
                           </tr>
                       </tbody>
-                     </table>					 
+                     </table>
+					 <i>* We compute the point-biserial correlation coefficient since <b>changes to a common slice</b> is a dichotomous variable.</i>					 
 				</section>	
 				<section class="page col-sm-9">
 					<h3>Conflicts in non modular scenarios often occur in model, view, and controller files</h3>
@@ -365,7 +368,7 @@
                       <thead>					 
                         <tr>
                           <th> Only conflicting scenarios with non modular contributions </th>
-                          <th> % contain at least one slice file with at least one conflict </th>
+                          <th> % contain at least one slice file (model, view or controller) with at least one conflict </th>
                         </tr>
                       </thded>
                       <tbody>
@@ -467,32 +470,32 @@
                       </thded>
                       <tbody>
                           <tr>
-                            <td> Mixed </th>
+                            <td> Mixed<sup><b>1</b></sup> </th>
                             <td> 64.7 </td>
                             <td> 57.4 </td>
                           </tr>
                           <tr>
-                            <td> Config </th>
+                            <td> Config <sup><b>2</b></sup></th>
                             <td> 24.2 </td>
                             <td> 23.8 </td>
                           </tr>
                           <tr>
-                            <td> App </th>
+                            <td> App<sup><b>3</b></sup> </th>
                             <td> 4.0 </td>
                             <td> 8.2 </td>
                           </tr>	
                           <tr>
-                            <td> View </th>
+                            <td> View<sup><b>4</b></sup> </th>
                             <td> 3.7 </td>
                             <td> 4.0 </td>
                           </tr>		
                           <tr>
-                            <td> Model </th>
+                            <td> Model<sup><b>5</b></sup> </th>
                             <td> 1.9 </td>
                             <td> 3.7 </td>
                           </tr>	
                           <tr>
-                            <td> Controller </th>
+                            <td> Controller<sup><b>6</b></sup> </th>
                             <td> 1.5 </td>
                             <td> 2.9 </td>
                           </tr>
@@ -503,6 +506,18 @@
                           </tr>							  
                       </tbody>
                      </table>
+					 <i>1 - contributions affect more than one package</i>
+					 <br>
+					 <i>2 - contains only configuration files such as routes, database schema, logs, Rakefile, Gemfile, etc</i>	
+					 <br>
+					 <i>3 - contains only global reusable files such as CSS files, templates, static pages, and Javascript files</i>	
+					 <br>
+					 <i>4 - contains only view files</i>	
+					 <br>
+					 <i>5 - contains only model files</i>	
+					 <br>
+					 <i>6 - contains  only controller files</i>	
+					 
             </div>
         </div>
     </main>
